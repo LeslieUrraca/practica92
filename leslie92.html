@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+
+  function numeros(...lista) {
+    return lista.sort(
+             function(x,y)
+             {
+               if (x>y) 
+                 return 1; 
+               else 
+                 return -1})
+             }
+
+  const eleordenados=numeros(18, 16, 27, 28);
+  document.write(eleordenados.toString());
+
+</script>
+
+</body>
+</html>
